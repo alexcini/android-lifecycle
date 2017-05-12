@@ -1,0 +1,70 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:gravity="center"
+            android:padding="16dip"
+            android:text="Placar Eletrônico"
+            android:textAllCaps="true"
+            android:textSize="18dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPlacarCasa"
+            android:gravity="center"
+            android:padding="16dip"
+            android:text="0"
+            android:textSize="50sp" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="16dip"
+            android:text="X"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvPlacarVisitante"
+            android:gravity="center"
+            android:padding="16dip"
+            android:text="0"
+            android:textSize="50sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="16dip"
+            android:text="Gol da Casa"
+            android:onClick="golCasa"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="16dip"
+            android:text="Gol Visitante"
+            android:onClick="golVisitante"/>
+    </TableRow>
+
+</TableLayout>
